@@ -1,168 +1,168 @@
+
 # SMM Boost
 
-Professional social media promotion services for Instagram, TikTok, YouTube, and other platforms.
+Профессиональные услуги по продвижению в соцсетях: Instagram, TikTok, YouTube и другие платформы.
 
-## 🚀 Features
+## 🚀 Возможности
 
-- **Multi-platform support**: Instagram, TikTok, YouTube, Telegram, VK, Twitter
-- **Secure payments**: Multiple payment methods including cards, Kaspi Pay, crypto
-- **Real-time processing**: Orders start within 0-30 minutes
-- **User authentication**: Secure account management with Supabase
-- **Responsive design**: Optimized for all devices
-- **24/7 support**: Customer support via Telegram and email
+- **Поддержка нескольких платформ**: Instagram, TikTok, YouTube, Telegram, VK, Twitter  
+- **Безопасные платежи**: карты, Kaspi Pay, криптовалюта  
+- **Обработка в реальном времени**: заказы запускаются за 0–30 минут  
+- **Аутентификация пользователей**: защищённый личный кабинет через Supabase  
+- **Адаптивный дизайн**: оптимизация под любые устройства  
+- **Поддержка 24/7**: помощь через Telegram и email
 
-## 🛠️ Tech Stack
+## 🛠️ Технологии
 
-- **Frontend**: React 18 + TypeScript + Vite
-- **Styling**: Tailwind CSS
-- **Authentication**: Supabase Auth
-- **Database**: Supabase PostgreSQL
-- **Icons**: Lucide React
-- **Deployment**: Netlify
+- **Фронтенд**: React 18 + TypeScript + Vite  
+- **Стили**: Tailwind CSS  
+- **Аутентификация**: Supabase Auth  
+- **База данных**: Supabase PostgreSQL  
+- **Иконки**: Lucide React  
+- **Деплой**: Netlify
 
-## 📦 Installation
+## 📦 Установка
 
-1. Clone the repository:
-```bash
+1. Клонируй репозиторий:
+
 git clone https://github.com/yourusername/smm-boost.git
 cd smm-boost
 ```
 
-2. Install dependencies:
-```bash
+2. Установи зависимости:
+
 npm install
 ```
 
-3. Set up environment variables:
-```bash
+3. Настрой переменные окружения:
+
 cp .env.example .env
 ```
 
-Fill in your Supabase credentials in `.env`:
+Заполни свои Supabase-данные в `.env`:
 ```
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-4. Start the development server:
-```bash
+4. Запусти локальный сервер разработки:
+
 npm run dev
 ```
 
-## 🚀 Deployment
+## 🚀 Деплой
 
-### Netlify Deployment
+### Деплой на Netlify
 
-1. **Connect to GitHub**:
-   - Push your code to a GitHub repository
-   - Connect your GitHub account to Netlify
+1. **Подключи GitHub**:
+   - Зальёшь код в репозиторий на GitHub  
+   - Подключишь свой GitHub-аккаунт к Netlify
 
-2. **Configure build settings**:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
+2. **Настрой параметры сборки**:
+   - Build command: `npm run build`  
+   - Publish directory: `dist`  
    - Node version: `18`
 
-3. **Set environment variables** in Netlify dashboard:
-   - `VITE_SUPABASE_URL`
+3. **Укажи переменные окружения** в Netlify:
+   - `VITE_SUPABASE_URL`  
    - `VITE_SUPABASE_ANON_KEY`
 
-4. **Deploy**:
-   - Netlify will automatically deploy on every push to main branch
+4. **Запусти деплой**:
+   - Netlify будет автоматически деплоить на каждый push в main-ветку
 
-### Manual Deployment
+### Ручной деплой
 
-```bash
-# Build for production
+# Собери проект для production
 npm run build
 
-# Preview the build
+# Предварительный просмотр сборки
 npm run preview
 ```
 
-## 🔧 Configuration
+## 🔧 Конфигурация
 
-### Environment Variables
+### Переменные окружения
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `VITE_SUPABASE_URL` | Supabase project URL | Yes |
-| `VITE_SUPABASE_ANON_KEY` | Supabase anonymous key | Yes |
+| Переменная | Описание | Обязательно |
+|------------|----------|-------------|
+| `VITE_SUPABASE_URL` | URL проекта Supabase | Да |
+| `VITE_SUPABASE_ANON_KEY` | Анонимный ключ Supabase | Да |
 
-### Build Configuration
+### Сборка
 
-The project uses Vite for building. Configuration is in `vite.config.ts`:
+Проект использует Vite. Конфигурация в `vite.config.ts`:
 
-- **Output directory**: `dist/`
-- **Asset optimization**: Enabled
-- **Code splitting**: Automatic
-- **TypeScript**: Full support
+- **Папка для сборки**: `dist/`  
+- **Оптимизация ассетов**: включена  
+- **Разделение кода**: автоматическое  
+- **Поддержка TypeScript**: полная
 
-## 📁 Project Structure
+## 📁 Структура проекта
 
 ```
 smm-boost/
-├── public/                 # Static assets
+├── public/                 # Статические файлы
 ├── src/
-│   ├── components/        # React components
-│   ├── data/             # Static data and configurations
-│   ├── hooks/            # Custom React hooks
-│   ├── lib/              # Utility libraries
-│   ├── types/            # TypeScript type definitions
-│   ├── App.tsx           # Main application component
-│   ├── main.tsx          # Application entry point
-│   └── index.css         # Global styles
-├── api/                  # Serverless functions
-├── netlify.toml          # Netlify configuration
-├── package.json          # Dependencies and scripts
-└── vite.config.ts        # Vite configuration
+│   ├── components/        # React-компоненты
+│   ├── data/             # Статические данные и настройки
+│   ├── hooks/            # Пользовательские хуки React
+│   ├── lib/              # Утилиты
+│   ├── types/            # Определения типов TypeScript
+│   ├── App.tsx           # Главный компонент приложения
+│   ├── main.tsx          # Точка входа приложения
+│   └── index.css         # Глобальные стили
+├── api/                  # Серверлесс-функции
+├── netlify.toml          # Конфиг Netlify
+├── package.json          # Зависимости и скрипты
+└── vite.config.ts        # Конфиг Vite
 ```
 
-## 🔐 Security
+## 🔐 Безопасность
 
-- **SSL encryption**: All data transmission is encrypted
-- **Input validation**: All user inputs are validated
-- **CORS protection**: Proper CORS headers configured
-- **XSS protection**: Content Security Policy implemented
-- **Authentication**: Secure user authentication with Supabase
+- **SSL-шифрование**: все данные передаются по защищённым каналам  
+- **Валидация ввода**: проверка всех пользовательских данных  
+- **Защита CORS**: правильные заголовки CORS  
+- **Защита от XSS**: применена Content Security Policy  
+- **Аутентификация**: безопасный вход через Supabase
 
-## 🎨 Design System
+## 🎨 Дизайн-система
 
-- **Colors**: Dark theme with purple/pink gradients
-- **Typography**: Inter font family
-- **Spacing**: 8px grid system
-- **Components**: Consistent button styles and form elements
-- **Responsive**: Mobile-first approach
+- **Цвета**: тёмная тема с градиентами фиолетовый/розовый  
+- **Типографика**: шрифт Inter  
+- **Сетка**: шаг 8px  
+- **Компоненты**: единые стили кнопок и форм  
+- **Адаптивность**: mobile-first
 
-## 📱 Browser Support
+## 📱 Поддержка браузеров
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- Chrome (последняя версия)  
+- Firefox (последняя версия)  
+- Safari (последняя версия)  
+- Edge (последняя версия)
 
-## 🤝 Contributing
+## 🤝 Внесение изменений
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-feature`
-3. Commit changes: `git commit -am 'Add new feature'`
-4. Push to branch: `git push origin feature/new-feature`
-5. Submit a pull request
+1. Сделай fork репозитория  
+2. Создай ветку: `git checkout -b feature/new-feature`  
+3. Закоммить изменения: `git commit -am 'Add new feature'`  
+4. Запушь ветку: `git push origin feature/new-feature`  
+5. Отправь pull request
 
-## 📄 License
+## 📄 Лицензия
 
-This project is proprietary software. All rights reserved.
+Это проприетарное ПО. Все права защищены.
 
-## 📞 Support
+## 📞 Поддержка
 
-- **Telegram**: @smm.boost.kz
-- **Email**: support.smm.boost.kz@gmail.com
-- **Phone**: +7 707 345 12 12
+- **Telegram**: @smm.boost.kz  
+- **Email**: support.smm.boost.kz@gmail.com  
+- **Телефон**: +7 707 345 12 12
 
-## 🔄 Updates
+## 🔄 Обновления
 
-- **v1.0.0**: Initial release with core functionality
-- Regular updates with new features and improvements
+- **v1.0.0**: Первая версия с основными функциями  
+- Регулярные обновления с новыми фичами и улучшениями
 
 ---
 
-Made with ❤️ by SMM Boost Team
+Сделано с ❤️ командой SMM Boost
