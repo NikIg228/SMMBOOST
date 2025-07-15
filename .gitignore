@@ -110,3 +110,5 @@ temp/
 
 # Bolt.new specific files (remove for standalone deployment)
 .bolt/
+
+netlify.toml

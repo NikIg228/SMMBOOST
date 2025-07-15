@@ -33,6 +33,6 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Environment variables (set these in Netlify dashboard)
+# Environment variables 
 # VITE_SUPABASE_URL = https://oebzwgxozadcjbqlxgkm.supabase.co
 # VITE_SUPABASE_ANON_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9lYnp3Z3hvemFkY2picWx4Z2ttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIyMzY2MTMsImV4cCI6MjA2NzgxMjYxM30.oJwA2HMXuh82nuAaewM6pPdY-gFwN2JWHJCxtqmksyI
